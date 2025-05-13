@@ -1,0 +1,465 @@
+@font-face {
+    font-family: 'Castoro Titling';
+    src: url('../fonts/CastoroTitling-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .page-wrapper {
+    width: 1280px;
+    margin: 0 auto;
+    background-color: #A39B95;
+    overflow-x: hidden;
+    
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Castoro Titling', serif;
+    background-color: #A39B95;
+    color: #000;
+    overflow-x: hidden;
+  }
+    /* Хедер */
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 60px;
+    background-color: #A39B95;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  .header-line {
+    width: calc(100% - 10px); 
+    height: 1px;
+    background-color: #000;
+    opacity: 0.6;
+    margin: 20px 0 0 0;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #111;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.3s;
+  }
+  
+  .nav-links a.active {
+    background-color: #595652;
+    color: #fff;
+  }
+  
+  .search-and-icons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    background-color: #c9c5bb;
+    border-radius: 5px;
+    padding: 8px 16px;
+  }
+  
+  .search-box input {
+    font-family: 'Castoro Titling', serif;
+    font-size: 20px;
+    padding: 10px 16px;
+    border: none;
+    outline: none;
+    background-color: #f0f0f0;
+    color: #888;
+    border-radius: 0px;
+    width: 240px;
+    height: 48px;
+  }
+  
+  .search-box img {
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+    cursor: pointer;
+  }
+  
+  .icon-search {
+    width: 30px;
+    height: 24px;
+    margin-left: 16px;
+    cursor: pointer;
+  }
+  
+  .icon-cart {
+    width: 36px;
+    height: 41px;
+    cursor: pointer;
+  }
+  
+  .icon-user {
+    width: 52px;
+    height: 50px;
+    cursor: pointer;
+  }
+  /* Хедер */
+
+
+
+
+/* штука 1 */
+.profile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.profile-form-wrapper {
+  position: relative;
+  width: 1136px;
+  height: 527px;
+  background: url('../assets/profile-bg.png') no-repeat center center/cover;
+  padding: 40px;
+  color: white;
+  font-family: 'Castoro Titling', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-title {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.full-width {
+  width: 100%;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+input {
+  padding: 10px 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+input::placeholder {
+  color: #666;
+}
+
+.button-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 28px;
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Castoro Titling', serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #e0e0e0;
+}
+/* предфутер*/
+
+.quote-section {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  background-image: url('../img/quote-bg.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  margin-bottom: 0;
+  align-items: center;
+  margin: 80px 0;
+  overflow: hidden;
+  padding-left: 60px;
+  margin: 0;
+padding: 0;
+}
+
+.quote-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.quote-text {
+  position: relative;
+  z-index: 2;
+  font-family: 'Courier New', monospace;
+  font-size: 30px;
+  color: white;
+  text-align: left; 
+  line-height: 1.6;
+  letter-spacing: 1px;
+  max-width: 1100px;  
+  padding-left: 40px;
+}
+
+.profile-wrapper {
+  background-color: white;
+  width: 100%;               
+  max-width: 100%;          
+  height: 606px;             
+  display: flex;
+  justify-content: center;   
+  align-items: center;
+  padding: 0 20px;           
+  box-sizing: border-box;
+}
+.nav-icon {
+  display: inline-block;
+  padding: 8px;
+}
+
+.nav-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+
+.nav-icon.active-icon {
+  border: 2px solid black;
+}
+/* предфутер*/
+
+  /* футер */
+.footer {
+    background-color: #3f3a34;
+    color: white;
+    font-family: 'Courier New', monospace;
+    padding: 40px 60px;
+    font-size: 20px;
+    margin-top: 0;
+  }
+  
+  .footer-top {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .footer .phone {
+    margin-bottom: 5px;
+  }
+  
+  .footer .subtext {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 15px; 
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .social-links a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Courier New', monospace;
+  }
+  
+  .footer-line {
+    width: 365px;
+    height: 1px;
+    background-color: white;
+    margin: 10px auto 0;
+    opacity: 0.6;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Courier New', monospace;
+    color: white; 
+    text-decoration: none; 
+  }
+  .footer-bottom a,
+  .footer-bottom a:visited,
+  .footer-bottom a:hover,
+  .footer-bottom a:active {
+  color: white;
+  text-decoration: none;
+  font-family: 'Courier New', monospace;
+}
+  
+  /* футер */
+
+  /* мобилки */
+  @media (max-width: 768px) {
+    .page-wrapper {
+      width: 100%;
+      padding: 0 16px;
+    }
+  
+    .main-header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+      gap: 20px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 16px;
+    }
+  
+    .search-and-icons {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+  
+    .search-box input {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .profile-section {
+      padding: 30px 0;
+    }
+  
+    .profile-form-wrapper {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .form-title {
+      font-size: 18px;
+      text-align: center;
+    }
+  
+    .form-row {
+      flex-direction: column;
+      gap: 16px;
+    }
+  
+    .form-group {
+      width: 100%;
+    }
+  
+    input {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .button-wrap {
+      justify-content: center;
+    }
+  
+    .quote-section {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      height: auto;
+      text-align: center;
+    }
+  
+    .quote-text {
+      padding: 20px;
+      font-size: 18px;
+      text-align: center;
+      max-width: 100%;
+    }
+  
+    .footer {
+      padding: 30px 20px;
+      font-size: 16px;
+    }
+  
+    .footer-top {
+      margin-bottom: 30px;
+    }
+  
+    .social-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footer-line {
+      width: 100%;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      font-size: 16px;
+    }
+  
+    .nav-icon img {
+      width: 24px;
+      height: 24px;
+    }
+  
+    .nav-links a {
+      font-size: 20px;
+    }
+  
+    .icon-cart,
+    .icon-user {
+      width: 32px;
+      height: 32px;
+    }
+  
+    .icon-search {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  /* мобилки */
